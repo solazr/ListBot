@@ -41,7 +41,7 @@ function updateStatusFile() {
 function generateFinalJSON(servers) {
     const finalData = servers.map(server => ({
         name: server.name,
-        serverip: server.serverip,
+        ip: server.ip,
         port: server.port,
         status: serverStatus[server.name]?.status || 'offline'
     }));
@@ -49,7 +49,7 @@ function generateFinalJSON(servers) {
 }
 
 function chkServer(server) {
-    const { serverip, port, name } = server;
+    const { ip, port, name } = server;
 
     if (!serverStatus[name]) {
         serverStatus[name] = { status: 'offline', nuked: false };
@@ -57,7 +57,7 @@ function chkServer(server) {
 
     const connectClient = () => {
         const client = mineflayer.createBot({
-            host: serverip,
+            host: ip,
             port: port,
             username: randUsername(5),
             version: false
