@@ -81,6 +81,11 @@ function chkServer(server) {
                 updateStatusFile();
             }
         });
+        client.on('chat', (u, m) => {
+            if (m.toLowerCase().startsWith("what server is this") {
+                client.chat(`This is ${name}, ${u}.`);
+            }
+        });
 
         client.on('end', () => {
             serverStatus[name].status = 'offline';
