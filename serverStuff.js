@@ -9,7 +9,7 @@ let serverStatus = {};
 let onlineDuration = {};
 
 function updateStatusFile() {
-    const updatedServers = Object.entries(serverStatus).map(([name, status]) => {
+    const updatedServers = Object.entries(serverStatus).map(([name, owner, status]) => {
         return {
             name: name,
             owner: owner,
