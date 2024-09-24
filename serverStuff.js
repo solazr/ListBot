@@ -66,7 +66,8 @@ function chkServer(server) {
         deathCount[name] = 0;
         onlineDuration[name] = 0;
 
-        client.on('spawn', () => {
+        client.on('login', () => {
+            client.chat('https://kaboom.1wjb.com/status/');
             serverStatus[name].status = 'online';
             onlineDuration[name] += 1;
             updateStatusFile();
