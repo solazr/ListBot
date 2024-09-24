@@ -1,91 +1,109 @@
 [
     {
         "name": "1wBoom",
+        "owner": "Solazr",
         "ip": "1wjb.com",
         "port": 25566
     },
     {
-        "name": "25570Tunnel",
+        "name": "25570 Tunnel",
+        "owner": "@gboardclipboard",
         "ip": "chipmunk.land",
         "port": 25570
+        
     },
     {
         "name": "AlexBoom",
+        "owner": "12alex12",
         "ip": "fart.tplinkdns.com",
         "port": 25565
     },
     {
         "name": "BongoBoom",
+        "owner": "CaydennO1",
         "ip": "bongocatsmp.site",
         "port": 25566,
         "disabled": true
     },
     {
         "name": "Ceboom",
+        "owner": "CaydennO1",
         "ip": "bongocatsmp.site",
         "port": 25565
     },
     {
         "name": "Chipmunk",
+        "owner": "_ChipMC_",
         "ip": "chipmunk.land",
         "port": 25565
     },
     {
         "name": "CodeBoom",
+        "owner": "Pringels2",
         "ip": "Kode_boom.aternos.me",
         "port": 34385,
         "disabled": true
     },
     {
         "name": "Devspace",
+        "owner": "@dijg",
         "ip": "147.185.221.18",
         "port": 17326,
         "disabled": true
     },
     {
         "name": "DingusBoom",
+        "owner": "NOTGodlynoahALT",
         "ip": "dingus.chipmunk.land",
         "port": 25565
     },
     {
         "name": "FatihBoom",
+        "owner": "Fatih",
         "ip": "193.122.152.5",
         "port": 20015
     },
     {
         "name": "Kaboom",
+        "owner": "Matthias",
         "ip": "play.kaboom.pw",
         "port": 25565
     },
     {
         "name": "Karboom",
+        "owner": "Unknown",
         "ip": "karboom.pw",
         "port": 25565,
         "disabled": true
     },
     {
         "name": "NekoBoom",
+        "owner": "_yfd",
         "ip": "168.100.225.224",
         "port": 25565
     },
     {
         "name": "PlBoom",
+        "owner": "PloatnO",
         "ip": "ploatno.uk",
         "port": 25565
     },
     {
         "name": "prljav",
+        "owner": "prljav",
         "ip": "prljav.cc",
         "port": 25565
     },
     {
         "name": "qilkboom",
+        "owner": "qilkde",
         "ip": "qilk.de",
         "port": 25569,
         "disabled": false
     },
     {
         "name": "zxzboom",
+        "owner": "zXzy",
         "ip": "77.46.211.38",
         "port": 25565,
         "disabled": true
