@@ -12,6 +12,7 @@ function updateStatusFile() {
     const updatedServers = Object.entries(serverStatus).map(([name, status]) => {
         return {
             name: name,
+            owner: server.owner,
             status: status.status,
             nuked: status.nuked || false,
             disabled: false
@@ -41,6 +42,7 @@ function updateStatusFile() {
 function generateFinalJSON(servers) {
     const finalData = servers.map(server => ({
         name: server.name,
+        owner: server.owner,
         ip: server.ip,
         port: server.port,
         status: serverStatus[server.name]?.status || 'offline'
