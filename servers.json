@@ -77,7 +77,7 @@
         "name": "qilkboom",
         "ip": "qilk.de",
         "port": 25569,
-        "disabled": true
+        "disabled": false
     },
     {
         "name": "zxzboom",
