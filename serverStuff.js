@@ -9,13 +9,13 @@ let serverStatus = {};
 let onlineDuration = {};
 
 function updateStatusFile() {
-    const updatedServers = Object.entries(serverStatus).map(([name, owner, status]) => {
+    const updatedServers = Object.entries(serverStatus).map(([name, statusObj]) => {
         return {
             name: name,
-            owner: owner,
-            status: status.status,
-            nuked: status.nuked || false,
-            disabled: false
+            owner: statusObj.owner,
+            status: statusObj.status,
+            nuked: statusObj.nuked || false,
+            disabled: statusObj.disabled || false
         };
     });
 
@@ -23,6 +23,7 @@ function updateStatusFile() {
     try {
         originalServers = JSON.parse(fs.readFileSync('servers.json'));
     } catch (err) {
+        console.error("Error reading servers.json:", err);
         return;
     }
 
@@ -51,10 +52,10 @@ function generateFinalJSON(servers) {
 }
 
 function chkServer(server) {
-    const { ip, port, name } = server;
+    const { ip, port, name, owner } = server;
 
     if (!serverStatus[name]) {
-        serverStatus[name] = { status: 'offline', nuked: false };
+        serverStatus[name] = { status: 'offline', nuked: false, owner: owner };
     }
 
     const connectClient = () => {
@@ -84,9 +85,10 @@ function chkServer(server) {
                 updateStatusFile();
             }
         });
+
         client.on('chat', (u, m) => {
             if (m.toLowerCase().startsWith("what server is this")) {
-                client.chat(`This is ${name}, ${u}.`);
+                client.chat(`This is ${name}, owned by ${owner}, ${u}.`);
             }
         });
 
@@ -100,7 +102,7 @@ function chkServer(server) {
         client.on('kicked', (reason) => {
             if (reason.translate === "disconnect.genericReason" && reason.with.includes("Internal Exception: io.netty.handler.codec.EncoderException: java.io.UTFDataFormatException")) {
                 const utfKickRegex = /encoded string (.*) too long: (\d+) (.*)/;
-        
+
                 for (const detail of reason.with) {
                     if (utfKickRegex.test(detail)) {
                         serverStatus[name].nuked = true;
@@ -110,11 +112,10 @@ function chkServer(server) {
                 }
             }
         });
-        
     };
 
     if (server.disabled) {
-        serverStatus[name] = { status: 'disabled', nuked: false };
+        serverStatus[name] = { status: 'disabled', nuked: false, owner: owner };
         updateStatusFile();
     } else {
         connectClient();
