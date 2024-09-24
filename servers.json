@@ -1,7 +1,7 @@
 [
     {
         "name": "1wBoom",
-        "ip": "localhost",
+        "ip": "1wjb.com",
         "port": 25566
     },
     {
@@ -44,7 +44,7 @@
     },
     {
         "name": "DingusBoom",
-        "ip": "173.173.87.49",
+        "ip": "dingus.chipmunk.land",
         "port": 25565
     },
     {
