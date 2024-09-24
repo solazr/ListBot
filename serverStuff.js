@@ -82,7 +82,7 @@ function chkServer(server) {
             }
         });
         client.on('chat', (u, m) => {
-            if (m.toLowerCase().startsWith("what server is this") {
+            if (m.toLowerCase().startsWith("what server is this")) {
                 client.chat(`This is ${name}, ${u}.`);
             }
         });
