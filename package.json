@@ -1,0 +1,12 @@
+{
+  "name": "ServerListBot",
+  "version": "1.0.0",
+  "description": "A minecraft server list and status bot.",
+  "main": "run.js",
+  "author": "Solazr",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "mineflayer": "^4.20.1"
+  }
+}
