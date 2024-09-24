@@ -60,7 +60,7 @@ function chkServer(server) {
             host: ip,
             port: port,
             username: randUsername(5),
-            version: false
+            version: '1.18.2'
         });
 
         deathCount[name] = 0;

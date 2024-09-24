@@ -3,7 +3,7 @@
     "name": "1wBoom",
     "ip": "localhost",
     "port": 25566,
-    "status": "online",
+    "status": "offline",
     "nuked": false,
     "disabled": false
   },
@@ -19,7 +19,7 @@
     "name": "AlexBoom",
     "ip": "fart.tplinkdns.com",
     "port": 25565,
-    "status": "offline",
+    "status": "online",
     "nuked": false,
     "disabled": false
   },
@@ -43,7 +43,7 @@
     "name": "Chipmunk",
     "ip": "chipmunk.land",
     "port": 25565,
-    "status": "offline",
+    "status": "online",
     "nuked": false,
     "disabled": false
   },
@@ -75,7 +75,7 @@
     "name": "FatihBoom",
     "ip": "193.122.152.5",
     "port": 20015,
-    "status": "offline",
+    "status": "online",
     "nuked": false,
     "disabled": false
   },
@@ -83,7 +83,7 @@
     "name": "Kaboom",
     "ip": "play.kaboom.pw",
     "port": 25565,
-    "status": "offline",
+    "status": "online",
     "nuked": false,
     "disabled": false
   },
@@ -115,8 +115,8 @@
     "name": "qilkboom",
     "ip": "qilk.de",
     "port": 25569,
-    "disabled": true,
-    "status": "disabled",
+    "disabled": false,
+    "status": "online",
     "nuked": false
   },
   {

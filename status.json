@@ -1,81 +1,97 @@
 [
   {
     "name": "1wBoom",
+    "ip": "localhost",
     "port": 25566,
-    "status": "online"
+    "status": "offline"
   },
   {
     "name": "25570Tunnel",
+    "ip": "chipmunk.land",
     "port": 25570,
     "status": "offline"
   },
   {
     "name": "AlexBoom",
+    "ip": "fart.tplinkdns.com",
     "port": 25565,
-    "status": "offline"
+    "status": "online"
   },
   {
     "name": "BongoBoom",
+    "ip": "bongocatsmp.site",
     "port": 25566,
     "status": "disabled"
   },
   {
     "name": "Ceboom",
+    "ip": "bongocatsmp.site",
     "port": 25565,
     "status": "offline"
   },
   {
     "name": "Chipmunk",
+    "ip": "chipmunk.land",
     "port": 25565,
-    "status": "offline"
+    "status": "online"
   },
   {
     "name": "CodeBoom",
+    "ip": "Kode_boom.aternos.me",
     "port": 34385,
     "status": "disabled"
   },
   {
     "name": "Devspace",
+    "ip": "147.185.221.18",
     "port": 17326,
     "status": "disabled"
   },
   {
     "name": "DingusBoom",
+    "ip": "173.173.87.49",
     "port": 25565,
     "status": "offline"
   },
   {
     "name": "FatihBoom",
+    "ip": "193.122.152.5",
     "port": 20015,
-    "status": "offline"
+    "status": "online"
   },
   {
     "name": "Kaboom",
+    "ip": "play.kaboom.pw",
     "port": 25565,
-    "status": "offline"
+    "status": "online"
   },
   {
     "name": "Karboom",
+    "ip": "karboom.pw",
     "port": 25565,
     "status": "disabled"
   },
   {
     "name": "NekoBoom",
+    "ip": "168.100.225.224",
     "port": 25565,
     "status": "offline"
   },
   {
     "name": "prljav",
+    "ip": "prljav.cc",
     "port": 25565,
     "status": "offline"
   },
   {
     "name": "qilkboom",
+    "ip": "qilk.de",
     "port": 25569,
-    "status": "disabled"
+    "status": "online"
   },
   {
     "name": "zxzboom",
+    "ip": "77.46.211.38",
     "port": 25565,
     "status": "disabled"
   }
