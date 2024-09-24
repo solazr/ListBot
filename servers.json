@@ -69,6 +69,11 @@
         "port": 25565
     },
     {
+        "name": "PlBoom",
+        "ip": "ploatno.uk",
+        "port": 25565
+    },
+    {
         "name": "prljav",
         "ip": "prljav.cc",
         "port": 25565
