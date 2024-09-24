@@ -95,12 +95,20 @@ function chkServer(server) {
             setTimeout(connectClient, 6000);
         });
 
-        client.on('kick', (reason) => {
+        client.on('kicked', (reason) => {
             if (reason.translate === "disconnect.genericReason" && reason.with.includes("Internal Exception: io.netty.handler.codec.EncoderException: java.io.UTFDataFormatException")) {
-                serverStatus[name].nuked = true;
-                updateStatusFile();
+                const utfKickRegex = /encoded string (.*) too long: (\d+) (.*)/;
+        
+                for (const detail of reason.with) {
+                    if (utfKickRegex.test(detail)) {
+                        serverStatus[name].nuked = true;
+                        updateStatusFile();
+                        break;
+                    }
+                }
             }
         });
+        
     };
 
     if (server.disabled) {
