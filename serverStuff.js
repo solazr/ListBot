@@ -12,7 +12,7 @@ function updateStatusFile() {
     const updatedServers = Object.entries(serverStatus).map(([name, status]) => {
         return {
             name: name,
-            owner: server.owner,
+            owner: owner,
             status: status.status,
             nuked: status.nuked || false,
             disabled: false
