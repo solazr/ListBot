@@ -3,20 +3,15 @@
         "name": "1wBoom",
         "owner": "Solazr",
         "ip": "1wjb.com",
-        "port": 25566
-    },
-    {
-        "name": "25570 Tunnel",
-        "owner": "@gboardclipboard",
-        "ip": "chipmunk.land",
-        "port": 25570
-        
+        "port": 25566,
+        "disabled": false
     },
     {
         "name": "AlexBoom",
         "owner": "12alex12",
         "ip": "fart.tplinkdns.com",
-        "port": 25565
+        "port": 25565,
+        "disabled": false
     },
     {
         "name": "BongoBoom",
@@ -29,13 +24,15 @@
         "name": "Ceboom",
         "owner": "CaydennO1",
         "ip": "bongocatsmp.site",
-        "port": 25565
+        "port": 25565,
+        "disabled": false
     },
     {
         "name": "Chipmunk",
         "owner": "_ChipMC_",
         "ip": "chipmunk.land",
-        "port": 25565
+        "port": 25565,
+        "disabled": false
     },
     {
         "name": "CodeBoom",
@@ -55,44 +52,57 @@
         "name": "DingusBoom",
         "owner": "NOTGodlynoahALT",
         "ip": "dingus.chipmunk.land",
-        "port": 25565
+        "port": 25565,
+        "disabled": false
     },
     {
         "name": "FatihBoom",
         "owner": "Fatih",
         "ip": "193.122.152.5",
-        "port": 20015
+        "port": 20015,
+        "disabled": false
+    },
+    {
+        "name": "Kabomboclaat",
+        "owner": "@gboardclipboard",
+        "ip": "chipmunk.land",
+        "port": 25570,
+        "disabled": false
     },
     {
         "name": "Kaboom",
         "owner": "Matthias",
         "ip": "play.kaboom.pw",
-        "port": 25565
+        "port": 25565,
+        "disabled": false
     },
     {
         "name": "Karboom",
         "owner": "mrhonir",
         "ip": "karboom.pw",
         "port": 25565,
-        "disabled": true
+        "disabled": false
     },
     {
         "name": "NekoBoom",
         "owner": "_yfd",
         "ip": "168.100.225.224",
-        "port": 25565
+        "port": 25565,
+        "disabled": false
     },
     {
         "name": "PlBoom",
         "owner": "PloatnO",
         "ip": "ploatno.uk",
-        "port": 25565
+        "port": 25565,
+        "disabled": false
     },
     {
         "name": "prljav",
         "owner": "prljav",
         "ip": "prljav.cc",
-        "port": 25565
+        "port": 25565,
+        "disabled": false
     },
     {
         "name": "qilkboom",
