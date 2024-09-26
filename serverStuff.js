@@ -36,7 +36,7 @@ function updstatus() {
         };
     });
 
-    fs.writeFileSync('stat.json', JSON.stringify(mergedServers, null, 2));
+    fs.writeFileSync('status.json', JSON.stringify(mergedServers, null, 2));
 }
 
 function chkServer(server) {
