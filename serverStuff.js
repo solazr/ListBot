@@ -3,19 +3,20 @@ const { randUsername } = require('./randUser');
 const fs = require('fs');
 
 const deathThreshold = 5;
-const deathTimeframe = 30000;
 let deathCount = {};
 let serverStatus = {};
 let onlineDuration = {};
+let playerList = {};
 
-function updateStatusFile() {
+function updstatus() {
     const updatedServers = Object.entries(serverStatus).map(([name, statusObj]) => {
         return {
             name: name,
             owner: statusObj.owner,
             status: statusObj.status,
             nuked: statusObj.nuked || false,
-            disabled: statusObj.disabled || false
+            disabled: statusObj.disabled || false,
+            players: playerList[name] || ''
         };
     });
 
@@ -23,7 +24,6 @@ function updateStatusFile() {
     try {
         originalServers = JSON.parse(fs.readFileSync('servers.json'));
     } catch (err) {
-        console.error("Error reading servers.json:", err);
         return;
     }
 
@@ -37,18 +37,6 @@ function updateStatusFile() {
     });
 
     fs.writeFileSync('stat.json', JSON.stringify(mergedServers, null, 2));
-    generateFinalJSON(mergedServers);
-}
-
-function generateFinalJSON(servers) {
-    const finalData = servers.map(server => ({
-        name: server.name,
-        owner: server.owner,
-        ip: server.ip,
-        port: server.port,
-        status: serverStatus[server.name]?.status || 'offline'
-    }));
-    fs.writeFileSync('status.json', JSON.stringify(finalData, null, 2));
 }
 
 function chkServer(server) {
@@ -73,7 +61,12 @@ function chkServer(server) {
             client.chat('https://kaboom.1wjb.com/status/');
             serverStatus[name].status = 'online';
             onlineDuration[name] += 1;
-            updateStatusFile();
+            setInterval(() => {
+                if (client.players) {
+                    playerList[name] = Object.keys(client.players).join(', ');
+                    updstatus();
+                }
+            }, 5000);
         });
 
         client.on('error', () => {});
@@ -82,7 +75,7 @@ function chkServer(server) {
             deathCount[name]++;
             if (deathCount[name] >= deathThreshold) {
                 serverStatus[name].nuked = true;
-                updateStatusFile();
+                updstatus();
             }
         });
 
@@ -95,7 +88,7 @@ function chkServer(server) {
         client.on('end', () => {
             serverStatus[name].status = 'offline';
             onlineDuration[name] = 0;
-            updateStatusFile();
+            updstatus();
             setTimeout(connectClient, 6000);
         });
 
@@ -106,7 +99,7 @@ function chkServer(server) {
                 for (const detail of reason.with) {
                     if (utfKickRegex.test(detail)) {
                         serverStatus[name].nuked = true;
-                        updateStatusFile();
+                        updstatus();
                         break;
                     }
                 }
@@ -116,7 +109,7 @@ function chkServer(server) {
 
     if (server.disabled) {
         serverStatus[name] = { status: 'disabled', nuked: false, owner: owner };
-        updateStatusFile();
+        updstatus();
     } else {
         connectClient();
     }
