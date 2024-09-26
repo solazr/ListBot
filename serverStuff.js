@@ -59,6 +59,7 @@ function chkServer(server) {
 
         client.on('login', () => {
             client.chat('https://kaboom.1wjb.com/status/');
+            setTimeout(() => { client.chat('Join the Nova Discord: https://discord.gg/yFPaHsSHHe') }, 1000);
             serverStatus[name].status = 'online';
             onlineDuration[name] += 1;
             setInterval(() => {
