@@ -40,20 +40,21 @@ function updstatus() {
 }
 
 function chkServer(server) {
-    const { ip, port, name, owner } = server;
+    const { ip, port, name, owner, nospchar } = server;
 
     if (!serverStatus[name]) {
         serverStatus[name] = { status: 'offline', nuked: false, owner: owner };
     }
 
     const connectClient = () => {
+        let user = randUsername(5, nospchar);
         const client = mineflayer.createBot({
             host: ip,
             port: port,
-            username: randUsername(5),
+            username: user,
             version: '1.18.2'
         });
-
+        //console.log(`${name}: ${user}`)
         deathCount[name] = 0;
         onlineDuration[name] = 0;
 
