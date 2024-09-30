@@ -52,8 +52,8 @@
         "owner": "@dijg",
         "ip": "147.185.221.18",
         "port": 17326,
-        "disabled": true,
-        "nospchar": false
+        "disabled": false,
+        "nospchar": true
     },
     {
         "name": "DingusBoom",
