@@ -98,6 +98,12 @@
         "disabled": false
     },
     {
+        "name": "Pregnant Horse",
+        "owner": "?",
+        "ip": "play.pregnant.horse",
+        "port": 10101,
+        "disabled": false
+    {
         "name": "prljav",
         "owner": "prljav",
         "ip": "prljav.cc",
