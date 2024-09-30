@@ -44,7 +44,7 @@
         "owner": "Pringels2",
         "ip": "Kode_boom.aternos.me",
         "port": 34385,
-        "disabled": false,
+        "disabled": true,
         "nospchar": true
     },
     {
