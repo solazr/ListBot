@@ -103,6 +103,7 @@
         "ip": "play.pregnant.horse",
         "port": 10101,
         "disabled": false
+    },
     {
         "name": "prljav",
         "owner": "prljav",
