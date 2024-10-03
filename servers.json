@@ -116,7 +116,7 @@
         "owner": "VarLong",
         "ip": "pregnant.horse",
         "port": 25565,
-        "disabled": false,
+        "disabled": true,
         "nospchar": true
     },
     {
