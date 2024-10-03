@@ -114,8 +114,8 @@
     {
         "name": "Pregnant Horse",
         "owner": "?",
-        "ip": "play.pregnant.horse",
-        "port": 10101,
+        "ip": "pregnant.horse",
+        "port": 25565,
         "disabled": false,
         "nospchar": false
     },
