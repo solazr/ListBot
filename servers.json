@@ -113,11 +113,11 @@
     },
     {
         "name": "Pregnant Horse",
-        "owner": "?",
+        "owner": "VarLong",
         "ip": "pregnant.horse",
         "port": 25565,
         "disabled": false,
-        "nospchar": false
+        "nospchar": true
     },
     {
         "name": "prljav",
