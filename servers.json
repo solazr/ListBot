@@ -82,7 +82,7 @@
     {
         "name": "1wboom",
         "owner": "solazr",
-        "ip": "h.solazr.dev",
+        "ip": "localhost",
         "port": 25566,
         "disabled": false,
         "nospchar": false
