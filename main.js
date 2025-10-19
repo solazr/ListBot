@@ -43,7 +43,7 @@ function cs(srv) {
 
         c.on('login', () => {
             c.chat('listbot created by solazr');
-            setTimeout(() => c.chat('https://kbm.solazr.dev [not active atm]'), 1000);
+            setTimeout(() => c.chat('see server statuses at https://kbm.solazr.dev'), 1000);
             ss[name].st = 'online';
             od[name] += 1;
             setInterval(() => {
