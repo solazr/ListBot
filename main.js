@@ -1,5 +1,5 @@
 const mineflayer = require('mineflayer');
-const { randUsername } = require('./randUser');
+const { ru } = require('./usergen');
 const fs = require('fs');
 
 const dt = 5;
@@ -35,7 +35,7 @@ function cs(srv) {
     if (!ss[name]) ss[name] = { st: 'offline', nk: false, o: owner };
 
     const cc = () => {
-        const u = randUsername(5, nospchar);
+        const u = ru(5, nospchar);
         const c = mineflayer.createBot({ host: ip, port: port, username: u, version: '1.18.2' });
 
         dc[name] = 0;

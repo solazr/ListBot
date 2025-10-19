@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { cs, ss } = require('./serverStuff');
+const { cs, ss } = require('./main');
 
 let sv;
 try { sv = JSON.parse(fs.readFileSync('servers.json')); }
