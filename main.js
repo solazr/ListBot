@@ -26,7 +26,7 @@ function us() {
         return { ...s, ...usv, ds: s.ds || false };
     });
 
-    fs.writeFileSync('status.json', JSON.stringify(ms, null, 2));
+    fs.writeFileSync('/var/www/kbm.solazr.dev/status.json', JSON.stringify(ms, null, 2));
 }
 
 function cs(srv) {
