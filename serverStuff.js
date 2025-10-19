@@ -59,8 +59,8 @@ function chkServer(server) {
         onlineDuration[name] = 0;
 
         client.on('login', () => {
-            client.chat('https://kaboom.1wjb.com/status/');
-            setTimeout(() => { client.chat('Join the Nova Discord: https://discord.gg/yFPaHsSHHe') }, 1000);
+            client.chat('listbot created by solazr');
+            setTimeout(() => { client.chat('https://kbm.solazr.dev [not active atm]') }, 1000);
             serverStatus[name].status = 'online';
             onlineDuration[name] += 1;
             setInterval(() => {
@@ -83,7 +83,7 @@ function chkServer(server) {
 
         client.on('chat', (u, m) => {
             if (m.toLowerCase().startsWith("what server is this")) {
-                client.chat(`This is ${name}, owned by ${owner}, ${u}.`);
+                client.chat(`${name} created by ${owner}`);
             }
         });
 

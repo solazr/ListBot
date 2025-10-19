@@ -1,5 +1,8 @@
 const fs = require('fs');
 
+const useJapanese = false;
+const useChinese = false;
+
 function randChar(charset) {
     return charset[Math.floor(Math.random() * charset.length)];
 }
@@ -24,9 +27,18 @@ function randUsername(length, nospecialchar = false) {
         if (nospecialchar) {
             username += randChar(alphanumeric);
         } else {
-            const randomChar = (i % 2 === 0) 
-                ? randChar(jpChars) 
-                : randChar(cnChars);
+            let availableSets = [];
+
+            if (useJapanese && jpChars.length > 0) availableSets.push(jpChars);
+            if (useChinese && cnChars.length > 0) availableSets.push(cnChars);
+
+            if (availableSets.length === 0) {
+                username += randChar(alphanumeric);
+                continue;
+            }
+
+            const selectedSet = randChar(availableSets);
+            const randomChar = randChar(selectedSet);
             username += `§${randomChar}`;
         }
     }

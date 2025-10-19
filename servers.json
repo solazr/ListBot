@@ -1,152 +1,96 @@
 [
     {
-        "name": "1wBoom",
-        "owner": "Solazr",
-        "ip": "1wjb.com",
-        "port": 25566,
-        "disabled": false,
-        "nospchar": false
-    },
-    {
-        "name": "AlexBoom",
-        "owner": "12alex12",
-        "ip": "fart.tplinkdns.com",
-        "port": 25565,
-        "disabled": false,
-        "nospchar": false
-    },
-    {
-        "name": "BongoBoom",
-        "owner": "CaydennO1",
-        "ip": "bongocatsmp.site",
-        "port": 25566,
-        "disabled": true,
-        "nospchar": false
-    },
-    {
-        "name": "Ceboom",
-        "owner": "CaydennO1",
-        "ip": "bongocatsmp.site",
-        "port": 25565,
-        "disabled": false,
-        "nospchar": false
-    },
-    {
-        "name": "Chipmunk",
-        "owner": "_ChipMC_",
-        "ip": "chipmunk.land",
-        "port": 25565,
-        "disabled": false,
-        "nospchar": false
-    },
-    {
-        "name": "CodeBoom",
-        "owner": "Pringels2",
-        "ip": "Kode_boom.aternos.me",
-        "port": 34385,
-        "disabled": true,
-        "nospchar": true
-    },
-    {
-        "name": "Devspace",
-        "owner": "@dijg",
-        "ip": "147.185.221.18",
-        "port": 17326,
-        "disabled": false,
-        "nospchar": true
-    },
-    {
-        "name": "DingusBoom",
-        "owner": "NOTGodlynoahALT",
-        "ip": "dingus.chipmunk.land",
-        "port": 25565,
-        "disabled": false,
-        "nospchar": false
-    },
-    {
-        "name": "FatihBoom",
-        "owner": "Fatih",
-        "ip": "193.122.152.5",
-        "port": 20015,
-        "disabled": false,
-        "nospchar": false
-    },
-    {
-        "name": "Kabomboclaat",
-        "owner": "@gboardclipboard",
-        "ip": "chipmunk.land",
-        "port": 25570,
-        "disabled": false,
-        "nospchar": false
-    },
-    {
-        "name": "Kaboom",
-        "owner": "Matthias/MissingTexture idk",
+        "name": "kaboom",
+        "owner": "MissingTexture/Mathias",
         "ip": "play.kaboom.pw",
         "port": 25565,
         "disabled": false,
         "nospchar": false
     },
     {
-        "name": "Karboom",
-        "owner": "mrhonir",
-        "ip": "karboom.pw",
+        "name": "chipmunk",
+        "owner": "ChipmunkMC",
+        "ip": "chipmunk.land",
         "port": 25565,
         "disabled": false,
         "nospchar": false
     },
     {
-        "name": "NekoBoom",
-        "owner": "_yfd",
+        "name": "chomens",
+        "owner": "chayapak",
+        "ip": "chayapak.chipmunk.land",
+        "port": 25565,
+        "disabled": false,
+        "nospchar": false
+    },
+    {
+        "name": "nekoboom",
+        "owner": "yfd_ (i think)",
         "ip": "168.100.225.224",
         "port": 25565,
         "disabled": false,
         "nospchar": false
     },
     {
-        "name": "PlBoom",
-        "owner": "PloatnO",
-        "ip": "ploatno.uk",
+        "name": "opt",
+        "owner": "optimisticdev",
+        "ip": "opt.chipmunk.land",
         "port": 25565,
         "disabled": false,
         "nospchar": false
     },
     {
-        "name": "Pregnant Horse",
-        "owner": "VarLong",
-        "ip": "pregnant.horse",
+        "name": "mojang-breakroom",
+        "owner": "[?]",
+        "ip": "opt.chipmunk.land",
+        "port": 14942,
+        "disabled": true,
+        "nospchar": false
+    },
+    {
+        "name": "merlboom",
+        "owner": "[?]",
+        "ip": "quest.64will64.com",
         "port": 25565,
         "disabled": true,
-        "nospchar": true
+        "nospchar": false
     },
     {
-        "name": "prljav",
-        "owner": "prljav",
-        "ip": "prljav.cc",
+        "name": "khy",
+        "owner": "khy",
+        "ip": "kbm.cutefox.club",
         "port": 25565,
         "disabled": false,
         "nospchar": false
     },
     {
-        "name": "qilkboom",
-        "owner": "qilkde",
+        "name": "mcpboom",
+        "owner": "m_c_player (pretty sure)",
+        "ip": "mcplayer.chipmunk.land",
+        "port": 25565,
+        "disabled": false,
+        "nospchar": false
+    },
+    {
+        "name": "switchboom",
+        "owner": "qilkde/denis",
         "ip": "qilk.de",
-        "port": 25569,
-        "disabled": false,
-        "nospchar": true
-    },
-    {
-        "name": "zxzboom",
-        "owner": "zXzy",
-        "ip": "77.46.211.38",
-        "port": 25565,
+        "port": 12556,
         "disabled": true,
         "nospchar": false
     },
     {
-        "name": "Mewo boom",
-        "owner": "(unknown)",
-        "ip": "mewo.pw",
+        "name": "1wboom",
+        "owner": "solazr",
+        "ip": "h.solazr.dev",
+        "port": 25566,
+        "disabled": false,
+        "nospchar": false
+    },
+    {
+        "name": "alexboom",
+        "owner": "alex (i forgot his user)",
+        "ip": "81.197.228.190",
         "port": 25565,
         "disabled": false,
         "nospchar": false
