@@ -1,14 +1,8 @@
 const fs = require('fs');
-const { chkServer, serverStatus } = require('./serverStuff');
+const { cs, ss } = require('./serverStuff');
 
-let servers;
-try {
-    servers = JSON.parse(fs.readFileSync('servers.json'));
-} catch (err) {
-    console.error('Error reading servers.json:', err);
-    process.exit(1);
-}
+let sv;
+try { sv = JSON.parse(fs.readFileSync('servers.json')); }
+catch (e) { console.error('Error reading servers.json:', e); process.exit(1); }
 
-servers.forEach(server => {
-    chkServer(server);
-});
+sv.forEach(s => cs(s));
